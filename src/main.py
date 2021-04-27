@@ -16,6 +16,8 @@ except Exception as error:
 else:
     print('Successfully entered password!')
 
+emailService.verifyLogin(username, password)
+
 games = {
     "Pokemon Platinum": "https://www.gamestop.com/video-games/more-gaming/nintendo-ds/games/products/pokemon-platinum-version/10073548.html",
     "Pokemon Diamond": "https://www.gamestop.com/video-games/more-gaming/nintendo-ds/games/products/pokemon-diamond/10064184.html",
@@ -39,3 +41,5 @@ while True:
             print(game, "isn't available")
 
         time.sleep(3)
+
+    time.sleep(60 * 10)
